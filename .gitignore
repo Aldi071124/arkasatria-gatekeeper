@@ -1,3 +1,6 @@
 node_modules/
 .env
 data/state.json
+wallet/
+circuits/gatekeeper.wasm
+circuits/gatekeeper_final.zkey

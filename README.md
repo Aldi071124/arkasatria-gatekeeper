@@ -181,7 +181,11 @@ shared/field.js            field arithmetic, keccak
 shared/hmac.js             HMAC-SHA256 verify/sign
 shared/snark.js            snarkjs wrapper (prove / verify)
 shared/store.js            disk persistence (seen proof_tx + cached responses)
-circuits/                  official gatekeeper wasm + zkey
+circuits/                  official gatekeeper wasm + zkey — NOT committed
+                           (binary files); `npm install` downloads them from
+                           https://agentgames.zkverify.io/circuits/ via
+                           `scripts/fetch-circuits.js` (postinstall, sizes
+                           verified: wasm 1,755,820 bytes, zkey 309,750 bytes)
 data/                      state.json (runtime; gitignored) + .gitkeep
 .env.example               env vars (no real secrets)
 .gitignore                 node_modules/, .env, data/state.json
